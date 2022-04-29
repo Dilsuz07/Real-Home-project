@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uy-joy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!------Font awesome icons link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+  
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class="fa-solid fa-angle-up"></i>
+</a>
+        
+   
+<!------navbar section start -->
+    <div class="navbar_section">
+
+        <div class="header_top">
+    
+            <div class="logo">
+              <img src="../image/logo1.png" alt="">
+            </div>
+        
+            <div class="lang-weather">        
+                <div class="language">
+                    <p>Language</p>
+                    <select name="" id="select">
+                        <option value="">O'zbek
+                        </option>
+                        <option value="">Russian</option>
+                        <option value="">English</option>
+                    </select>
+                </div>
+        
+                <div class="weather">
+                    <i class="fa-solid fa-cloud-meatball"></i>
+                </div>
+        
+                <div class="cost">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+        
+            </div>
+    
+        </div>
+     
+   
+       <!-------header-2 section start------->
+   
+       <div class="header-2">
+   
+           <div id="menu-btn" class="fas fa-bars"></div>
+           <div class="menu">
+            <a href="./index.html">Bosh sahifa</a>
+            <a href="#xizmatlar">Asosiy toifalar</a>
+            <a href="#biz_haqimizda">Biz haqimizda</a>
+            <div class="login">
+                  <button>
+                    <a href="./register.html">
+                      <i class="fa-solid fa-heart"></i>
+                      <p>Saqlangan</p>
+                    </a>
+                  </button>
+                  <button>
+                      <a href="./register.html">
+                       <i class="fa-solid fa-user"></i>
+                       <p>Mening profilim</p>
+                      </a> 
+                   </button>
+                  <div class="media">
+                    <button>
+                      <a href="./register.html">
+                        <p>E'lon berish</p>
+                      </a>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        
+      </div>
+
+    </div>
+       
+    </div>
+
+<!------navbar section end -->
+
+<!-- filter section start -->
+
+<div class="container">
+
+  <div class="filter_all">
+    
+    <div class="filter">
+      <div class="search-1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="E'lonlar">
+      </div>
+      <div class="location ">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="search" placeholder="Butun O'zbekiston">
+      </div>
+      <div class="search">
+        <p>Qidiruv</p>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    
+    
+    <div class="select_menu1">
+      
+      <p>Filtrlar</p>
+            <div class="numbers-blok">
+
+            <div class="select-value">
+
+              <div class="center">
+                <label for="">Turi</label><br>
+                  <select name="sources" id="sources" class="custom-select sources options" placeholder="Turi">
+                    <option value="profile">Sotuv</option>
+                    <option value="word">Ijara</option>
+                  </select>
+              </div>
+  
+              <div class="center">
+                <label for="">Toifasi</label><br>
+                <select name="sources" id="sources" class="custom-select sources" placeholder="Toifasi">
+                  <option value="profile">Sotish</option>
+                  <option value="word">Sotib olish</option>
+                  <option value="profile">Ijara uzoq muddatga</option>
+                  <option value="word">Ijara sutkalik</option>
+                  <option value="word">Ayirboshlash</option>
+                </select>
+              </div>
+            </div>
+                        
+              <div class="input-number">
+                  <label for="" class="numbers costlabel">Narxi</label><br>
+                  <div class="quantity">
+                    <input type="number" min="100"  step="10" value="100">
+                  </div>
+              </div>
+  
+                <div class="input-number">
+                  <label for="" class="numbers">...</label><br>
+                  <div class="quantity">
+                    <input type="number" placeholder="...">
+                  </div>
+                </div>
+
+                <div class="input-number">
+                  <label for="" class="numbers">Xonalar soni</label><br>
+                  <div class="quantity">
+                    <input type="number" min="100"  step="1" value="1">
+                  </div>
+              </div>
+  
+        
+                <div class="input-number">
+                  <label for="" class="numbers">...</label><br>
+                  <div class="quantity">
+                    <input type="number" min="1" step="1" placeholder="...">
+                  </div>
+                </div>
+
+                <div class="input-number">
+                  <label for="" class="numbers">Umumiy maydon m<sup>2</sup></label><br>
+                  <div class="quantity">
+                    <input type="number" min="100"  step="10" value="100">
+                  </div>
+              </div>
+  
+                <div class="input-number">
+                  <label for="" class="numbers">...</label><br>
+                  <div class="quantity">
+                    <input type="number" placeholder="...">
+                  </div>
+                </div>
+
+                <div class="input-number">
+                  <label for="" class="numbers">Qavati</label><br>
+                  <div class="quantity">
+                    <input type="number" min="100"  step="1" value="1">
+                  </div>
+              </div>
+  
+        
+                <div class="input-number">
+                  <label for="" class="numbers">...</label><br>
+                  <div class="quantity">
+                    <input type="number" min="1" step="1" placeholder="...">
+                  </div>
+                </div>
+
+            </div>
+            
+          </div>
+
+        </div>          
+</div>
+
+<!-- filter section end -->
+
+
+
+<!-- reklama section start -->
+
+<div class="container">
+    <div class="reklama_blok">
+        <p>Bu yerda reklama</p>
+    </div>
+</div>
+
+<!-- reklama section end -->
+
+<section class="example">
+  <h2 class="product-category">Uylar</h2>
+    <div class="container">
+      <div class="row">
+
+        <div class="product-card col-12 col-lg-3 col-sm-6 col-md-4">
+          <div class="product-image">
+              <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+              <img src="../image/dacha-1.jpg" class="product-thumb" alt="">
+              <a href="./more.html">
+                <button class="card-btn">Ko'proq bilish...</button>
+              </a>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Hovli</h3>
+              <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+              <span class="price">$2000</span><span class="actual-price"></span>
+          </div>
+      </div>
+  
+      <div class="product-card  col-12 col-lg-3 col-sm-6 col-md-4">
+        <div class="product-image">
+            <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+            <img src="../image/image-3.jpg" class="product-thumb" alt="">
+            <a href="./more.html">
+              <button class="card-btn">Ko'proq bilish...</button>
+            </a>
+        </div>
+        <div class="product-info">
+            <h3 class="product-brand">Hovli</h3>
+            <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+            <span class="price">$4000</span><span class="actual-price"></span>
+        </div>
+    </div>
+
+    <div class="product-card  col-12 col-lg-3 col-sm-6 col-md-4">
+      <div class="product-image">
+          <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+          <img src="../image/image-4.jpg" class="product-thumb" alt="">
+          <a href="./more.html">
+            <button class="card-btn">Ko'proq bilish...</button>
+          </a>
+      </div>
+      <div class="product-info">
+          <h3 class="product-brand">Hovli</h3>
+          <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+          <span class="price">$2000</span><span class="actual-price"></span>
+      </div>
+  </div>
+
+  <div class="product-card  col-12 col-lg-3 col-sm-6 col-md-4">
+    <div class="product-image">
+        <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+        <img src="../image/dacha-4.jpg" class="product-thumb" alt="">
+        <a href="./more.html">
+          <button class="card-btn">Ko'proq bilish...</button>
+        </a>
+    </div>
+    <div class="product-info">
+        <h3 class="product-brand">Hovli</h3>
+        <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+        <span class="price">$3000</span><span class="actual-price"></span>
+    </div>
+  </div>
+
+
+  <div class="product-card col-12 col-lg-3 col-sm-6 col-md-4">
+    <div class="product-image">
+        <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+        <img src="../image/dacha-4.jpg" class="product-thumb" alt="">
+        <a href="./more.html">
+          <button class="card-btn">Ko'proq bilish...</button>
+        </a>
+    </div>
+    <div class="product-info">
+        <h3 class="product-brand">Hovli</h3>
+        <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+        <span class="price">$2000</span><span class="actual-price"></span>
+    </div>
+</div>
+
+<div class="product-card  col-12 col-lg-3 col-sm-6 col-md-4">
+  <div class="product-image">
+      <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+      <img src="../image/image-4.jpg" class="product-thumb" alt="">
+      <a href="./more.html">
+        <button class="card-btn">Ko'proq bilish...</button>
+      </a>
+  </div>
+  <div class="product-info">
+      <h3 class="product-brand">Hovli</h3>
+      <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+      <span class="price">$4000</span><span class="actual-price"></span>
+  </div>
+</div>
+
+<div class="product-card  col-12 col-lg-3 col-sm-6 col-md-4">
+<div class="product-image">
+    <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+    <img src="../image/image-2.jpg" class="product-thumb" alt="">
+    <a href="./more.html">
+      <button class="card-btn">Ko'proq bilish...</button>
+    </a>
+</div>
+<div class="product-info">
+    <h3 class="product-brand">Hovli</h3>
+    <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+    <span class="price">$2000</span><span class="actual-price"></span>
+</div>
+</div>
+
+<div class="product-card  col-12 col-lg-3 col-sm-6 col-md-4">
+<div class="product-image">
+  <span class="discount-tag"><i class="fa-solid fa-heart"></i></span>
+  <img src="../image/dacha-1.jpg" class="product-thumb" alt="">
+  <a href="./more.html">
+    <button class="card-btn">Ko'proq bilish...</button>
+  </a>
+</div>
+<div class="product-info">
+  <h3 class="product-brand">Hovli</h3>
+  <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+  <span class="price">$3000</span><span class="actual-price"></span>
+</div>
+</div>
+    </div>
+    </div>
+</section>      
+
+<!-- section top start -->
+
+
+<section class="product mt-5"> 
+  <h2 class="product-category">Top e'lonlar</h2>
+  <button class="pre-btn"><img src="../image/arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="../image/arrow.png" alt=""></button>
+  <div class="product-container">
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/dacha-1.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Hovli</h3>
+              <p class="product-short-description">Toshkent /Yunusobod /30.07.2002</p>
+              <span class="price">$2000</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/gazon-1.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Yashil maydon</h3>
+              <p class="product-short-description">Navoiy / Suq'diyona</p>
+              <span class="price">$200</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/image-2.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Mehmonxona</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$300</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/image-4.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Lorem</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/image-3.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Lorem</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/gazon-1.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Lorem</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/image-3.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Lorem</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/gazon-2.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Lorem</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/image-3.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">brand</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">Top</span>
+              <img src="../image/dacha-1.jpg" class="product-thumb" alt="">
+              <button class="card-btn">Ko'proq bilish...</button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Lorem</h3>
+              <p class="product-short-description">Lorem ipsum dolor sit amet.</p>
+              <span class="price">$20</span><span class="actual-price"></span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- section top end -->
+<!--footer starts from here-->
+<footer class="footer">
+    <div class="container">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">UY JOY</h5>
+    <!--headin5_amrc-->
+    <p class="mb10"><img src="../image/logo1.png" alt=""></p>
+    <p><i class="fa fa-location-arrow"></i> @uy_joy </p>
+    <p><i class="fa fa-phone"></i>  +91-XXX-XX-XX  </p>
+    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+    
+    </div>
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Foydalanuvchilarga</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="http://webenlance.com">Mobil ilovalar</a></li>
+    <li><a href="http://webenlance.com">Yordam</a></li>
+    <li><a href="http://webenlance.com">Pullik xizmatlar</a></li>
+    <li><a href="http://webenlance.com">Saytda reklama</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    
+    <div class=" col-sm-4 col-md  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Mutaxassislarga</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="http://webenlance.com">Shaxsiy kabinet</a></li>
+    <li><a href="http://webenlance.com">Ro'yxatdan o'tish</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Dasturchilar</h5>
+    <!--headin5_amrc ends here-->
+    
+    <ul class="footer_ul_amrc">
+        <li><a href="http://webenlance.com">Asadbek Davlatov</a></li>
+        <li><a href="http://webenlance.com">Dilso'z Jonizoqova</a></li>
+    </ul>
+    <!--footer_ul2_amrc ends here-->
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container ">
+    <ul class="foote_bottom_ul_amrc">
+    <li><a href="#header">Bosh sahifa</a></li>
+    <li><a href="#xizmatlar">Asosiy toifalar</a></li>
+    <li><a href="#biz_haqimizda">Biz haqimizda</a></li>
+    </ul>
+    <!--foote_bottom_ul_amrc ends here-->
+    <p class="text-center">Ishlab chiqildi @2022 |  <a href="#">UY JOY</a></p>
+    
+    <ul class="social_footer_ul text-center footer1">
+    <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fa-brands fa-telegram"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <!--social_footer_ul ends here-->
+    </div>
+    
+    </footer>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/quary.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/select.js"></script>
+
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/korzina.js"></script>
+    <script src="../js/top.js"></script>
+</body>
+</html>
